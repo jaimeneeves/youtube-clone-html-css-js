@@ -58,9 +58,11 @@ body {
   font-weight: 500;
   font-size: 14px;
   margin-bottom: 7px;
-  
   line-height: 17px;
-  letter-spacing: -1px;
+  
+  /* https://forum.figma.com/t/letter-spacing-should-not-be-percentage-based/3062 */
+  /* 0.01em is indeed 1%  */
+  letter-spacing: -0.05em;
 }
 
 /* video details channel */
