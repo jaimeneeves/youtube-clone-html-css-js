@@ -20,9 +20,27 @@ body {
   background-color: #212121;
 }
 
+.white {
+  color: var(--color-white);
+}
+
+/* Home Page */
+
+.page-home {}
+.page-home-video {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.home-video__list {
+  display: flex;
+  gap: 14px;
+}
+
+/* Video Component */
+
 .video {
   width: 242px;
-
   display: flex;
   flex-direction: column;
   gap: var(--video-space-base);
@@ -31,7 +49,6 @@ body {
 .video__avatar {
   width: 32px;
   height: 32px;
-
   border-radius: 50%;
   background-color: var(--color-thumb-empty);
 }
@@ -59,7 +76,6 @@ body {
   font-size: 14px;
   margin-bottom: 7px;
   line-height: 17px;
-  
   /* https://forum.figma.com/t/letter-spacing-should-not-be-percentage-based/3062 */
   /* 0.01em is indeed 1%  */
   letter-spacing: -0.05em;
@@ -73,6 +89,8 @@ body {
 }
 .video__details--channel-name {
   color: var(--color-gray-aa);
+  letter-spacing: -0.02em;
+  line-height: 17px;
 }
 
 /* video details views */
@@ -84,7 +102,11 @@ body {
 
 .video__details--views-video {
   color: var(--color-gray-aa);
+  letter-spacing: -0.10em;
+  line-height: 17px;
 }
 .video__details--views-publication-date {
   color: var(--color-gray-aa);
+  letter-spacing: -0.05em;
+  line-height: 17px;
 }
