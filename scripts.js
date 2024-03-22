@@ -1,7 +1,7 @@
-const videos = [
+const VIDEOS = [
   {
-    thumbnail: "./images/1-thumbnail.png",
-    avatar: "./images/1-avatar.png",
+    thumbnail: "./images/thumbnail-1.png",
+    avatar: "./images/avatar-1.png",
     textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
     verified: true,
     textareaChannelName: "Coke Studio Bangla",
@@ -9,8 +9,8 @@ const videos = [
     textareaPublicationDate: "2 days ago"
   },
   {
-    thumbnail: "./images/1-thumbnail.png",
-    avatar: "./images/1-avatar.png",
+    thumbnail: "./images/thumbnail-2.png",
+    avatar: "./images/avatar-2.png",
     textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
     verified: true,
     textareaChannelName: "Coke Studio Bangla",
@@ -18,108 +18,103 @@ const videos = [
     textareaPublicationDate: "2 days ago"
   },
   {
-    thumbnail: "./images/1-thumbnail.png",
-    avatar: "./images/1-avatar.png",
+    thumbnail: "./images/thumbnail-3.png",
+    avatar: "./images/avatar-3.png",
     textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
     verified: true,
     textareaChannelName: "Coke Studio Bangla",
     textareaViewCount: "1.5 M views",
     textareaPublicationDate: "2 days ago"
   },
-  {
-    thumbnail: "./images/1-thumbnail.png",
-    avatar: "./images/1-avatar.png",
-    textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
-    verified: true,
-    textareaChannelName: "Coke Studio Bangla",
-    textareaViewCount: "1.5 M views",
-    textareaPublicationDate: "2 days ago"
-  },
-  {
-    thumbnail: "./images/1-thumbnail.png",
-    avatar: "./images/1-avatar.png",
-    textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
-    verified: true,
-    textareaChannelName: "Coke Studio Bangla",
-    textareaViewCount: "1.5 M views",
-    textareaPublicationDate: "2 days ago"
-  },
-  {
-    thumbnail: "./images/1-thumbnail.png",
-    avatar: "./images/1-avatar.png",
-    textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
-    verified: true,
-    textareaChannelName: "Coke Studio Bangla",
-    textareaViewCount: "1.5 M views",
-    textareaPublicationDate: "2 days ago"
-  },
-  {
-    thumbnail: "./images/1-thumbnail.png",
-    avatar: "./images/1-avatar.png",
-    textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
-    verified: true,
-    textareaChannelName: "Coke Studio Bangla",
-    textareaViewCount: "1.5 M views",
-    textareaPublicationDate: "2 days ago"
-  },
-  {
-    thumbnail: "./images/1-thumbnail.png",
-    avatar: "./images/1-avatar.png",
-    textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
-    verified: true,
-    textareaChannelName: "Coke Studio Bangla",
-    textareaViewCount: "1.5 M views",
-    textareaPublicationDate: "2 days ago"
-  },
-  {
-    thumbnail: "./images/1-thumbnail.png",
-    avatar: "./images/1-avatar.png",
-    textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
-    verified: true,
-    textareaChannelName: "Coke Studio Bangla",
-    textareaViewCount: "1.5 M views",
-    textareaPublicationDate: "2 days ago"
-  },
-  {
-    thumbnail: "./images/1-thumbnail.png",
-    avatar: "./images/1-avatar.png",
-    textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
-    verified: true,
-    textareaChannelName: "Coke Studio Bangla",
-    textareaViewCount: "1.5 M views",
-    textareaPublicationDate: "2 days ago"
-  },
-  {
-    thumbnail: "./images/1-thumbnail.png",
-    avatar: "./images/1-avatar.png",
-    textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
-    verified: true,
-    textareaChannelName: "Coke Studio Bangla",
-    textareaViewCount: "1.5 M views",
-    textareaPublicationDate: "2 days ago"
-  },
-  {
-    thumbnail: "./images/1-thumbnail.png",
-    avatar: "./images/1-avatar.png",
-    textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
-    verified: true,
-    textareaChannelName: "Coke Studio Bangla",
-    textareaViewCount: "1.5 M views",
-    textareaPublicationDate: "2 days ago"
-  }
+  // {
+  //   thumbnail: "./images/1-thumbnail.png",
+  //   avatar: "./images/1-avatar.png",
+  //   textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
+  //   verified: true,
+  //   textareaChannelName: "Coke Studio Bangla",
+  //   textareaViewCount: "1.5 M views",
+  //   textareaPublicationDate: "2 days ago"
+  // },
+  // {
+  //   thumbnail: "./images/1-thumbnail.png",
+  //   avatar: "./images/1-avatar.png",
+  //   textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
+  //   verified: true,
+  //   textareaChannelName: "Coke Studio Bangla",
+  //   textareaViewCount: "1.5 M views",
+  //   textareaPublicationDate: "2 days ago"
+  // },
+  // {
+  //   thumbnail: "./images/1-thumbnail.png",
+  //   avatar: "./images/1-avatar.png",
+  //   textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
+  //   verified: true,
+  //   textareaChannelName: "Coke Studio Bangla",
+  //   textareaViewCount: "1.5 M views",
+  //   textareaPublicationDate: "2 days ago"
+  // },
+  // {
+  //   thumbnail: "./images/1-thumbnail.png",
+  //   avatar: "./images/1-avatar.png",
+  //   textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
+  //   verified: true,
+  //   textareaChannelName: "Coke Studio Bangla",
+  //   textareaViewCount: "1.5 M views",
+  //   textareaPublicationDate: "2 days ago"
+  // },
+  // {
+  //   thumbnail: "./images/1-thumbnail.png",
+  //   avatar: "./images/1-avatar.png",
+  //   textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
+  //   verified: true,
+  //   textareaChannelName: "Coke Studio Bangla",
+  //   textareaViewCount: "1.5 M views",
+  //   textareaPublicationDate: "2 days ago"
+  // },
+  // {
+  //   thumbnail: "./images/1-thumbnail.png",
+  //   avatar: "./images/1-avatar.png",
+  //   textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
+  //   verified: true,
+  //   textareaChannelName: "Coke Studio Bangla",
+  //   textareaViewCount: "1.5 M views",
+  //   textareaPublicationDate: "2 days ago"
+  // },
+  // {
+  //   thumbnail: "./images/1-thumbnail.png",
+  //   avatar: "./images/1-avatar.png",
+  //   textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
+  //   verified: true,
+  //   textareaChannelName: "Coke Studio Bangla",
+  //   textareaViewCount: "1.5 M views",
+  //   textareaPublicationDate: "2 days ago"
+  // },
+  // {
+  //   thumbnail: "./images/1-thumbnail.png",
+  //   avatar: "./images/1-avatar.png",
+  //   textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
+  //   verified: true,
+  //   textareaChannelName: "Coke Studio Bangla",
+  //   textareaViewCount: "1.5 M views",
+  //   textareaPublicationDate: "2 days ago"
+  // },
+  // {
+  //   thumbnail: "./images/1-thumbnail.png",
+  //   avatar: "./images/1-avatar.png",
+  //   textareaTitle: "Bulbuli | Coke Studio Bangla | Season One | Ritu Raj X Nandita",
+  //   verified: true,
+  //   textareaChannelName: "Coke Studio Bangla",
+  //   textareaViewCount: "1.5 M views",
+  //   textareaPublicationDate: "2 days ago"
+  // }
 ];
 
-// console.log(videos);
-// let items = ['maca','laranga', 'banana'];
-// let html = `<ul>${items.map(item => `<li>${item}</li>`).join('')}</ul>`;
-// console.log(html);
-
-let html = `
-  ${videos.map(video => {
+let htmlVideos = `
+  ${VIDEOS.map(video => {
     return `
       <div class="video">
         <div class="video__thumbnail">
-          <img src="./images/Thumbnail.png" alt="" srcset="">
+          <img src="${video.thumbnail}" alt="" srcset="">
         </div>
         <div class="video__information">
           <div class="video__avatar">
@@ -140,4 +135,4 @@ let html = `
       </div>`
   }).join('')}`;
 
-  document.querySelector('#video-list').innerHTML = html;
+  document.querySelector('#video-list').innerHTML = htmlVideos;

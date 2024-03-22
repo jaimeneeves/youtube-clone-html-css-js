@@ -8,13 +8,66 @@
 </head>
 <body>
 
-  <div class="page-home-video">
-    <div class="home-video__list" id="video-list">
-      
+  <nav class="header">
+
+    <div class="search-area">
+      <div class="search-bar">
+        <input class="search-bar__input" placeholder="Search" type="text">
+        <button class="search-bar__btn">
+          <img src="images/icon-search.svg" alt="" srcset="">
+        </button>
+      </div>
+      <div class="search-bar-mic">
+        <img src="images/icon-mic.svg" alt="" srcset="">
+      </div>
     </div>
+
+    <div class="header--actions">
+      <div>
+        <img src="images/icon-create-video.png" alt="">
+      </div>
+      <div>
+        <img src="images/icon-more.png" alt="">
+      </div>
+      <div>
+        <img src="images/icon-notification.png" alt="">
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- BEGIN FILTER -->
+  <div class="page-home--filter-container">
+    <hr>
+    <div class="home-video__filter" id="category-list">
+      <!-- BEGIN -->
+      <div class="filter-category active">
+        <span>All</span>
+      </div>
+      <div class="filter-category">
+        <span>Cook Studio</span>
+      </div>
+      <div class="filter-category">
+        <span>UX</span>
+      </div>
+      <div class="filter-category">
+        <span>Music</span>
+      </div>
+      <div class="filter-category">
+        <span>Tech</span>
+      </div>
+      <!-- END -->
+    </div>
+    <hr>
   </div>
+  <!-- END FILTER -->
+
+  <!-- BEGIN VIDEO LIST -->
+  <div class="page-home--video--container">
+    <div class="home-video__list" id="video-list"></div>
+  </div>
+  <!-- END VIDEO LIST -->
 
   <script src="scripts.js"></script>
-
 </body>
 </html>

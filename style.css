@@ -29,17 +29,42 @@ body {
   color: var(--color-white);
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header--actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 /* Home Page */
 
 .page-home {}
-.page-home-video {
+.page-home--video--container {
   display: flex;
   flex-direction: column;
   gap: 35px;
 }
+.page-home--filter-container {
+  margin-bottom: 25px;
+}
+.home-video__filter {
+  display: flex;
+  gap: 12px;
+}
 .home-video__list {
   display: flex;
   gap: 14px;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px solid var(--color-black-38);
 }
 
 /* Video Component */
@@ -164,6 +189,7 @@ body {
 .search-area {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--video-space-smail);
 }
 
