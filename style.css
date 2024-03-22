@@ -18,6 +18,10 @@
   --video-space-base: 10px;
 
   /* Radius */
+
+  /* Font Size */
+  --fs-small: 12px;
+  --fs-base: 14px;
 }
 
 body {
@@ -31,7 +35,14 @@ body {
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.header--right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-right: 30px;
 }
 
 .header--actions {
@@ -49,7 +60,7 @@ body {
   gap: 35px;
 }
 .page-home--filter-container {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .home-video__filter {
   display: flex;
@@ -191,6 +202,7 @@ hr {
   align-items: center;
   justify-content: center;
   gap: var(--video-space-smail);
+  margin: auto;
 }
 
 /* Mic */
@@ -204,4 +216,22 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Menu Item */
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 5px 5px 20px;
+}
+
+.menu-item.active {
+  background-color: var(--color-black-38);
+}
+
+.menu-item--label {
+  color: var(--color-white);
+  font-size: var(--fs-small);
 }
