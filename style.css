@@ -24,6 +24,14 @@
   --fs-base: 14px;
 }
 
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #212121;
@@ -73,6 +81,13 @@ body {
 
 hr {
   margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px solid var(--color-black-38);
+}
+
+.line {
+  /* margin: 1rem 0; */
   color: inherit;
   border: 0;
   border-top: 1px solid var(--color-black-38);
@@ -234,4 +249,27 @@ hr {
 .menu-item--label {
   color: var(--color-white);
   font-size: var(--fs-small);
+}
+
+.menu-item--icon {
+  width: 20px;
+  height: 20px;
+}
+.menu-item--icon svg {
+  color: var(--color-white);
+}
+/* Sidebar */
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  position: fixed;
+  transition: left 0.3s;
+  background-color: var(--color-black-21);
+  padding: 10px;
+}
+
+.sidebar .line {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
