@@ -14,6 +14,12 @@
   --color-blue: #3DA6FF;
   --color-thumb-empty: #C4C4C4;
 
+  /* BEGIN Theme Variables */
+  --background-color: var(--color-black-18);
+  --bg-input-color: var(var(--color-black-18));
+  --text-color: var(--color-white);
+  /* END Theme Variables */
+
   /* Space */
   --video-space-smail: 8px;
   --video-space-base: 10px;
@@ -26,6 +32,12 @@
   --fs-base: 14px;
 }
 
+[data-theme="light"] {
+  --background-color: var(--color-white);
+  --bg-input-color: var(var(--color-white));
+  --text-color: var(--color-black);
+}
+
 *,
 *::after,
 *::before {
@@ -36,7 +48,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--color-black-18);
+  background-color: var(--background-color);
 }
 
 .app {
@@ -137,7 +149,7 @@ body {
 }
 
 .video__details--title {
-  color: var(--color-white);
+  color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
   margin-bottom: 7px;
@@ -202,12 +214,21 @@ body {
   gap: 20px;
   padding: 10px 5px 10px 20px;
 }
+
 .menu-item.active {
   background-color: var(--color-black-38);
   border-radius: 10px;
 }
-.menu-item--label {
+
+[data-theme="light"] .menu-item.active .menu-item--label {
   color: var(--color-white);
+}
+[data-theme="light"] .menu-item.active .menu-item--icon svg {
+  color: var(--color-white);
+}
+
+.menu-item--label {
+  color: var(--text-color);
   font-size: var(--fs-small);
 }
 .menu-item--icon {
@@ -215,8 +236,9 @@ body {
   height: 20px;
 }
 .menu-item--icon svg {
-  color: var(--color-white);
+  color: var(--text-color);
 }
+
 .menu-item .menu-item-ellipse {
   margin-left: auto;
 }
